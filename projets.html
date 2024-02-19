@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+    function f(){
+        window.open("https://github.com");
+    }
+
+    function r_originmc(){
+        window.open("https://github.com/Aurele879/OriginMC");
+    }
+
+    function r_loupe(){
+        window.open("https://github.com/Aurele879/Loupe");
+    }
+
+    function r_drakoclient(){
+        window.open("https://github.com/Aurele879/DrakoClient");
+    }
+
+    function r_pendu(){
+        window.open("https://github.com/Aurele879/Jeu-Du-Pendu");
+    }
+</script>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="social.html">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="projects">
+            <!-- BLOC PROJET-->
+            <article class="project">
+                <h2 class="ptitre">OriginMC</h2>
+                <p>Un launcher minecraft incluant un modpack, un syteme de téléchargement du jeu et des mods. Tout ce que vous avez à faire, c'est cliquer sur le bouton "jouer" !</p>
+                <button class="redirect_github" onclick="r_originmc()">
+                    <img src="assets/github.png" class="github_icon">
+                </button>
+            </article>
+
+            <article class="project">
+                <h2 class="ptitre">Pendu</h2>
+                <p>description</p>
+                <button class="redirect_github" onclick="r_pendu()">
+                    <img src="assets/github.png" class="github_icon">
+                </button>
+            </article>
+
+            <article class="project">
+                <h2 class="ptitre">DrakoClient</h2>
+                <p>description</p>
+                <button class="redirect_github" onclick="r_drakoclient()">
+                    <img src="assets/github.png" class="github_icon">
+                </button>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

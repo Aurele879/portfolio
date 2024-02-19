@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<script>
+    function f(){
+        window.open("https://github.com/Aurele879");
+    }
+
+    function r_linkedin(){
+        window.open("https://www.linkedin.com/in/aur%C3%A8le-jambert-b5a967278/");
+    }
+
+    function r_insta(){
+        window.open("https://www.instagram.com/aurele082/");
+    }
+</script>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="social.html">Social</a></li>
+            </ul>
+        </nav>
+    </header>
+    <center>
+        <div class="reseau">
+            <h2 class="ptitre">Instagram</h2>
+            <button class="redirect_social" onclick="r_insta()">↗️</button>
+        </div>
+
+        <div class="reseau">
+            <h2 class="ptitre">Linkedin</h2>
+            <button class="redirect_social" onclick="r_linkedin()">↗️</button>
+        </div>
+
+        <div class="reseau">
+            <h2 class="ptitre">Github</h2>
+            <button class="redirect_social" onclick="f()">↗️</button>
+        </div>
+    </center>
+</body>
+</html>

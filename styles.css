@@ -1,0 +1,107 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #fff;
+}
+
+.navbar {
+    background-color: #000;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    padding: 0 20px;
+}
+
+li:hover {
+    background-color: #868686;
+    border-radius: 30px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+.intro, .projects {
+    text-align: center;
+    padding: 20px;
+}
+
+.intro_content{
+    background-color: #d3d3d3;
+    padding: 1.5%;
+    border-radius: 40px;
+    color: #000417
+}
+
+.logo {
+    max-width: 300px;
+    margin: 20px auto;
+    height: 30%;
+    width: 30%;
+    border-radius: 100%;
+}
+
+.project {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+article{
+    text-align: left;
+}
+
+.github_icon{
+    height: 30px;
+}
+
+.redirect_github{
+    width: 15%;
+    background-color: rgb(192, 212, 235);
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+}
+.redirect_github:hover {
+    background-color: rgb(141, 156, 173);
+  }
+
+.reseau {
+    border-radius: 10px;
+    border-color: #000000;
+    background-color: #b8b8b8;
+    height: 40%;
+    width: 50%;
+    text-align: center;
+}
+
+.redirect_social {
+    width: 15%;
+    background-color: rgb(192, 212, 235);
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    color: #000;
+    font-size: 1.5em;
+    text-align: center;
+    width: 20%;
+    height: 20%;
+}
+
+.redirect_social:hover{
+    background-color: rgb(141, 156, 173);
+}
