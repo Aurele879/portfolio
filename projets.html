@@ -1,71 +1,36 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projets</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Aurele's Space Studio</title>
 </head>
-
-<script>
-    function f(){
-        window.open("https://github.com");
-    }
-
-    function r_originmc(){
-        window.open("https://github.com/Aurele879/OriginMC");
-    }
-
-    function r_loupe(){
-        window.open("https://github.com/Aurele879/Loupe");
-    }
-
-    function r_drakoclient(){
-        window.open("https://github.com/Aurele879/DrakoClient");
-    }
-
-    function r_pendu(){
-        window.open("https://github.com/Aurele879/Jeu-Du-Pendu");
-    }
-</script>
-
 <body>
-    <header>
-        <nav class="navbar">
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="social.html">Social</a></li>
-            </ul>
+
+    <div class="navbar">
+        <nav>
+            <a class="navbar_link" href="index.html">Accueil</a>
+            <a  class="navbar_link"href="projets.html">Projets</a>
+            <a  class="navbar_link"href="about.html">À propos</a>
         </nav>
-    </header>
-    <main>
-        <section class="projects">
-            <!-- BLOC PROJET-->
-            <article class="project">
-                <h2 class="ptitre">OriginMC</h2>
-                <p>Un launcher minecraft incluant un modpack, un syteme de téléchargement du jeu et des mods. Tout ce que vous avez à faire, c'est cliquer sur le bouton "jouer" !</p>
-                <button class="redirect_github" onclick="r_originmc()">
-                    <img src="assets/github.png" class="github_icon">
-                </button>
-            </article>
+    </div>
 
-            <article class="project">
-                <h2 class="ptitre">Pendu</h2>
-                <p>description</p>
-                <button class="redirect_github" onclick="r_pendu()">
-                    <img src="assets/github.png" class="github_icon">
-                </button>
-            </article>
+    <div class="projet_content">
+        <div class="sous_box">
+            <img src="assets/logo.png" alt="logo d'un projet">
+            <button>En savoir plus</button>
+            <button>Télécharger</button>
 
-            <article class="project">
-                <h2 class="ptitre">DrakoClient</h2>
-                <p>description</p>
-                <button class="redirect_github" onclick="r_drakoclient()">
-                    <img src="assets/github.png" class="github_icon">
-                </button>
-            </article>
-        </section>
-    </main>
+        </div>
+        <div class="sous_box">
+            <h2>PROJET</h2>
+            <p>Postremo ad id indignitatis est ventum, ut cum peregrini ob formidatam haut ita dudum alimentorum inopiam pellerentur ab urbe praecipites, sectatoribus disciplinarum liberalium inpendio paucis sine respiratione ulla extrusis, tenerentur minimarum adseclae veri, quique id simularunt ad tempus, et tria milia saltatricum ne interpellata quidem cum choris totidemque remanerent magistris.</p>
+        </div>
+    </div>
 </body>
 </html>
