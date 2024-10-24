@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     font-family: "Barlow Semi Condensed", sans-serif;
-    font-size: larger;
+    font-size: 22px;
 }
 .navbar_link{
     text-decoration: none;
@@ -34,8 +34,8 @@ body{
     margin-right: auto;
     width: 20%;
     border-radius: 100%;
-    max-height: 400px;
-    max-width: 400px;
+    max-height: 3500px;
+    max-width: 350px;
 }
 .logo_site2{
     margin-top: 5%;
@@ -126,3 +126,8 @@ body{
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
   }
+.mail {
+    color: #555555;
+    font-size: 30px;
+    font-style: oblique;
+}
