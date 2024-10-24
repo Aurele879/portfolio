@@ -1,0 +1,71 @@
+body{
+    margin: 0px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: larger;
+}
+.navbar_link{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.navbar_link:hover{
+    text-decoration: underline;
+}
+.navbar{
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    text-align: center;
+    background-color:rgb(39, 39, 39);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.text_content{
+    text-align: center;
+    max-width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo_site{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    border-radius: 100%;
+}
+.projet_content{
+    margin-top: 5%;
+    padding: 1%;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    max-width: 80%;
+    margin-left: 10%;
+    margin-right: auto;
+}
+.projet_content{
+    display: flex;
+}
+.sous_box{
+    margin-left: 3%;
+}
+.sous_box button{
+    margin-top: 6%;
+    background-color: rgb(31, 113, 207);
+    border-style: hidden;
+    padding: 7%;
+    border-radius: 5px;
+    text-align: center;
+    width: 90%;
+    max-width: 90%;
+}
+.sous_box button:hover{
+    background-color: rgb(67, 121, 168);
+    cursor: pointer;
+}
+.projet_content img{
+    margin-top: 4.7%;
+    height: 7pc;
+    border-radius: 30px;
+}
