@@ -1,2 +1,1 @@
-# 🌍Repository of my website
-<img src="assets/logo.png"></img>
+## Repository of my portfolio-website
