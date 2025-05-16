@@ -1,38 +1,105 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Aurele's Space Studio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #1a1a1a;
+      color: #e5e7eb;
+    }
+    .project-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .smooth-btn {
+      transition: all 0.3s ease-in-out;
+      transform: scale(1);
+    }
+    .smooth-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      background-color: #1e40af;
+    }
+  </style>
 </head>
 <body>
-
-    <div class="navbar">
-        <nav>
-            <a class="navbar_link" href="index.html">Accueil</a>
-            <a  class="navbar_link"href="projets.html">Projets</a>
-            <a  class="navbar_link"href="about.html">À propos</a>
-        </nav>
+  <!-- Header Section -->
+  <header class="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-gray-900 to-gray-800 text-white">
+    <img src="assets/logo.png" alt="Logo" class="w-64 h-64 rounded-full mb-6">
+    <h1 class="text-4xl md:text-5xl font-bold mb-4">Qui suis-je ?</h1>
+    <div class="max-w-2xl text-center px-4">
+      <h2 class="text-xl md:text-2xl font-semibold mb-2">Bonjour, je m'appelle Aurèle</h2>
+      <p class="text-base md:text-lg">
+        Je suis un étudiant en BUT informatique passionné par la la programmation de logiciels en tout genres. Avec une formation en Python et langages du web (HTML et CSS essentiellement), je suis capable de mener des projets en tout genre.
+      </p>
     </div>
+  </header>
 
-    <img class="logo_site" src="assets/logo.png" alt="un garçon en noir et blanc qui regarde les étoiles">
-
-    <div class="text_content">
-        <div>
-            <h1>Bienvenue !</h1>
-            <p>
-                Bienvenue sur mon site !
-                Ici, je partage mes projets de code ainsi qu'une partie de mon parcours dans d'autres domaines. Que vous soyez passionné de programmation, en quête d’inspiration ou simplement curieux, ce site vous offre un aperçu de mon travail. Vous y découvrirez des projets variés, allant du développement web à des applications plus originales, conçus pour résoudre des problèmes concrets ou simplement explorer de nouvelles idées.
-                Mon objectif est de partager mon apprentissage et mes réalisations tout en créant une vitrine de mes progrès. À travers ces projets, vous pourrez aussi mieux comprendre mon approche, mes compétences, et ma manière d'aborder les défis techniques/logiques. N’hésitez pas à explorer, et à me contacter si un projet vous intéresse !
-                Bonne visite, et bienvenue dans mon univers.
+  <!-- Projects Section -->
+  <section class="py-16 bg-gray-900">
+    <div class="container mx-auto px-4">
+      <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Quelques projets</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project 1 -->
+        <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="assets/logo_astro.png" alt="Projet 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Lynx</h3>
+            <p class="text-gray-400 mb-4">
+              Une brève description du projet 1, mettant en avant les technologies utilisées et l'objectif principal.
             </p>
+            <a href="https://github.com/Aurele879/Lynx" class="smooth-btn inline-block bg-blue-700 text-white px-4 py-2 rounded">En savoir plus</a>
+          </div>
         </div>
+        <!-- Project 2 -->
+        <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="assets/logo_astro.png" alt="Projet 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Astro Launcher</h3>
+            <p class="text-gray-400 mb-4">
+              Une brève description du projet 2, soulignant ses fonctionnalités clés et son impact.
+            </p>
+            <a href="https://aurele879.github.io/Astro-Launcher/" class="smooth-btn inline-block bg-blue-700 text-white px-4 py-2 rounded">En savoir plus</a>
+          </div>
+        </div>
+        <!-- Project 3 -->
+        <div class="project-card bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <img src="assets/logo_astro.png" alt="Projet 3" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Jeu Du Pendu</h3>
+            <p class="text-gray-400 mb-4">
+              Une brève description du projet 3, avec un focus sur les défis relevés et les résultats obtenus.
+            </p>
+            <a href="#" class="smooth-btn inline-block bg-blue-700 text-white px-4 py-2 rounded">En savoir plus</a>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
 
+  <!-- Contact Section -->
+  <section class="py-16 bg-gray-800">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="text-3xl md:text-4xl font-bold mb-8">Contactez-moi</h2>
+      <p class="text-lg mb-4">Envie de collaborer ou d'en savoir plus ? N'hésitez pas à me contacter !</p>
+      <div class="flex flex-col items-center space-y-4">
+        <a href="mailto:votre.aurelej.cl@gmail.com" class="text-blue-400 hover:text-blue-300">aurelej.cl@gmail.com</a>
+        <a href="https://www.linkedin.com/in/aur%C3%A8le-jambert-b5a967278/" target="_blank" class="text-blue-400 hover:text-blue-300">LinkedIn</a>
+        <a href="https://github.com/Aurele879" target="_blank" class="text-blue-400 hover:text-blue-300">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 bg-gray-900 text-white text-center">
+    <p>© 2025 Jambert. Tous droits réservés.</p>
+  </footer>
 </body>
 </html>
